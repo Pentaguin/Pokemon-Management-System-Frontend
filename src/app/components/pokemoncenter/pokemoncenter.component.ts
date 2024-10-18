@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuButtonComponent } from '../../menu-button/menu-button.component';
+import { MenuButtonComponent } from '../menu-button/menu-button.component';
 
 @Component({
   selector: 'app-pokemoncenter',
