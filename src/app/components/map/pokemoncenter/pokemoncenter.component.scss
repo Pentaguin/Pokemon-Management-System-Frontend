@@ -1,35 +1,33 @@
 .map-container {
     position: relative;
     width: 100%;
-    max-width: calc(240px * 9);
+    max-width: calc(240px * 7);
     margin: 0 auto;
-}
 
-.pokemon-center-image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+    .pokemon-center-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
-.clickable-area {
-    position: absolute;
-    border: 2px solid red;
-    background-color: rgba(255, 0, 0, 0);
-    cursor: pointer;
-}
+    .clickable-area {
+        position: absolute;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0);
+        cursor: pointer;
+    }
 
+    .pokemon-box {
+        top: 5%;
+        left: 71%;
+        width: 7%;
+        height: 22%;
+    }
 
-.pokemon-box {
-    top: 5%;
-    left: 71%;
-    width: 7%;
-    height: 22%;
-}
-
-
-.exit {
-    top: 87.5%;
-    left: 42.5%;
-    width: 13.7%;
-    height: 10%;
+    .exit {
+        top: 87.5%;
+        left: 42.5%;
+        width: 13.7%;
+        height: 10%;
+    }
 }

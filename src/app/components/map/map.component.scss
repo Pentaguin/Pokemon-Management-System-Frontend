@@ -3,33 +3,31 @@
     width: 100%;
     max-width: calc(2560px);
     margin: 0 auto;
-}
 
-.map-image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+    .map-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
-.clickable-area {
-    position: absolute;
-    border: 2px solid red;
-    background-color: rgba(255, 0, 0, 0);
-    cursor: pointer;
-}
+    .clickable-area {
+        position: absolute;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0);
+        cursor: pointer;
 
+        &.pokemon-center {
+            top: 7%;
+            left: 52.5%;
+            width: 10%;
+            height: 23%;
+        }
 
-.pokemon-center {
-    top: 7%;
-    left: 52.5%;
-    width: 10%;
-    height: 23%;
-}
-
-
-.pokemon-mart {
-    top: 56%;
-    left: 55%;
-    width: 10%;
-    height: 19%;
+        &.pokemon-mart {
+            top: 56%;
+            left: 55%;
+            width: 10%;
+            height: 19%;
+        }
+    }
 }

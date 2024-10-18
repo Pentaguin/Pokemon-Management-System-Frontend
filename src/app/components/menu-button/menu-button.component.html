@@ -1,0 +1,16 @@
+<div class="dropdown-container">
+    <button class="dropdown-button" (click)="toggleDropdown()">
+        <img src="/poketch.png" alt="Menu Icon" />
+    </button>
+    <div class="dropdown-menu" *ngIf="dropdownOpen">
+        <ul>
+            <li (click)="navigateTo('map')">BACK TO MAP</li>
+            <li (click)="navigateTo('goldfarm')">MONEY FARM</li>
+            <li (click)="navigateTo('pokedex')">POKéDEX </li>
+            <li (click)="navigateTo('party')">PARTY</li>
+            <li (click)="navigateTo('bag')">BAG</li>
+            <li (click)="navigateTo('stats')">STATS</li>
+            <li (click)="navigateTo('pokemoncard-scanner')">POKEMON CARD SCANNER</li>
+        </ul>
+    </div>
+</div>

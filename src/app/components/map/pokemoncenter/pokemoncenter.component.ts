@@ -1,20 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuButtonComponent } from '../../menu-button/menu-button.component';
 
 @Component({
   selector: 'app-pokemoncenter',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, MenuButtonComponent],
   templateUrl: './pokemoncenter.component.html',
-  styleUrl: './pokemoncenter.component.scss'
+  styleUrls: ['./pokemoncenter.component.scss']
 })
 export class PokemoncenterComponent {
+
   constructor(private router: Router) { }
+
   onBuildingClick(buildingName: string) {
-    console.log(`Clicked on ${buildingName}`);
 
     if (buildingName === 'Exit') {
-      this.router.navigate(['/map']);
+      this.router.navigate(['']);
     }
   }
 }
