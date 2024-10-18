@@ -18,6 +18,8 @@ export class PokemoncenterComponent {
 
     if (buildingName === 'Exit') {
       this.router.navigate(['']);
+    } else if (buildingName === 'Pokemon Box') {
+      this.router.navigate(['pokemonbox']);
     }
   }
 }
