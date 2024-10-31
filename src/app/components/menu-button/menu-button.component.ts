@@ -22,6 +22,11 @@ export class MenuButtonComponent {
     if (page == "map") {
       this.router.navigate(['']);
     }
-    // this.router.navigate([`/${page}`]);
+    else if (page == "party") {
+      this.router.navigate([`/${page}`]);
+    }
+    else if (page == "goldfarm") {
+      this.router.navigate([`/${page}`]);
+    }
   }
 }

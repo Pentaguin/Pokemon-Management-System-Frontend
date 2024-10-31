@@ -1,0 +1,85 @@
+.party-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url('/partybackground.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    position: relative;
+
+    .main-slot {
+        display: flex;
+        align-items: flex-start;
+        background-image: url('/bigpartyslot.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 10px;
+        margin: 10px;
+        color: #ffffff;
+        font-family: 'Pokemon Emerald', sans-serif;
+        text-shadow: 1px 1px 2px #000;
+        width: 50%;
+        height: auto;
+
+        .pokemon-sprite {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+
+        .pokemon-info {
+            text-align: center;
+            font-size: 2.9rem;
+            margin-top: 210px;
+
+            .pokemon-name {
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    }
+
+    .small-slots-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45%;
+
+        .small-slot {
+            display: flex;
+            align-items: center;
+            background-image: url('/smallpartyslot.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 15px;
+            margin: 12px;
+            color: #ffffff;
+            font-family: 'Pokemon Emerald', sans-serif;
+            text-shadow: 1px 1px 2px #000;
+            width: 100%;
+            height: auto;
+
+            .pokemon-sprite {
+                width: 100%;
+                max-width: 100px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            .pokemon-info {
+                text-align: left;
+                font-size: 1.9rem;
+
+                .pokemon-name {
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

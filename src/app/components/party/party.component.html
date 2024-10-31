@@ -1,0 +1,20 @@
+<div class="party-container">
+    <!-- Main Pokémon Slot on Left -->
+    <div class="main-slot">
+        <img [src]="party[0]?.sprite" alt="{{ party[0]?.name }}" class="pokemon-sprite" />
+        <div class="pokemon-info">
+            <div class="pokemon-name">{{ party[0]?.name }}</div>
+        </div>
+    </div>
+
+    <!-- Small Pokémon Slots on Right -->
+    <div class="small-slots-container">
+        <div *ngFor="let pokemon of party.slice(1)" class="small-slot">
+            <img [src]="pokemon.sprite" alt="{{ pokemon.name }}" class="pokemon-sprite" />
+            <div class="pokemon-info">
+                <div class="pokemon-name">{{ pokemon.name }}</div>
+            </div>
+        </div>
+    </div>
+    <app-menu-button></app-menu-button>
+</div>

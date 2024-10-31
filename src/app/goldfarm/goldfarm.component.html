@@ -1,0 +1,15 @@
+<div class="image-container">
+    <div class="image-button" (click)="clicked()">
+        <img src="togepi.png" />
+    </div>
+    <button (click)="save()" class="save-button">
+        Save
+    </button>
+    <span>
+        Gold: {{ gold }}
+    </span>
+    <span>
+        Amount of clicks: {{ amountOfClicks }}
+    </span>
+    <app-menu-button></app-menu-button>
+</div>
