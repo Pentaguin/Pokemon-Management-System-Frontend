@@ -15,8 +15,10 @@ export class MapComponent {
   onBuildingClick(buildingName: string) {
     console.log(`Clicked on ${buildingName}`);
 
-    if (buildingName === 'Pokémon Center') {
+    if (buildingName === 'Pokemon Center') {
       this.router.navigate(['/pokemoncenter']);
+    } else if (buildingName === 'Pokemon Mart') {
+      this.router.navigate(['/pokemonmart']);
     }
   }
 
