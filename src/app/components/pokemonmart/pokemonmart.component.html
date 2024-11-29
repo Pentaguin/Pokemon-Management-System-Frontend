@@ -2,7 +2,17 @@
     <img src="/mart.png" alt="Pokémon Mart Map" class="pokemon-mart-image" draggable="false" />
 
     <div class="clickable-area exit" (click)="onBuildingClick('Exit')"></div>
+    <div class="clickable-area shop" (click)="onBuildingClick('Shop')"></div>
+
+    <div class="shop-popup-container">
+        <div *ngIf="isMenuOpen" class="popup-menu">
+            <ul>
+                <li (click)="selectOption('buy')">Buy Item</li>
+                <li (click)="selectOption('sell')">Sell Item</li>
+                <li (click)="selectOption('manage')">Item Management</li>
+            </ul>
+        </div>
+    </div>
 
     <app-menu-button></app-menu-button>
-
 </div>

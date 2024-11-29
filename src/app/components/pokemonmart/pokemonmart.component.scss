@@ -15,12 +15,84 @@
         border: 2px solid red;
         background-color: rgba(255, 0, 0, 0);
         cursor: pointer;
+
+        &.shop {
+            top: 30%;
+            left: 19%;
+            width: 8%;
+            height: 18%;
+        }
+
+        &.exit {
+            top: 86.3%;
+            left: 27.5%;
+            width: 17.7%;
+            height: 13%;
+        }
     }
 
-    .exit {
-        top: 86.3%;
-        left: 27.5%;
-        width: 17.7%;
-        height: 13%;
+    .popup-menu {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transform: translate(-50%, 0);
+        background-color: #f8f8f8;
+        border: 8px solid #3b6e9d;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        z-index: 100;
+        font-family: 'Pokemon Emerald', sans-serif;
+        font-size: 1.8rem;
+        padding: 20px;
+        width: 240px;
+        height: 200px;
+        text-align: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: stretch;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 15px 0;
+            cursor: pointer;
+            color: #3b6e9d;
+            background-color: #f0f0f0;
+            border: 3px solid transparent;
+            border-radius: 8px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+            &:hover {
+                background-color: #cceeff;
+                border: 3px solid #0b3c5d;
+                color: #0b3c5d;
+            }
+
+            &.active {
+                background-color: #3b6e9d;
+                color: #ffffff;
+                border: 3px solid #ffffff;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
+
 }
